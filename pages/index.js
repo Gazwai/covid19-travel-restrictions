@@ -26,8 +26,9 @@ export default function Home() {
 
         <div className={styles.grid}>
           <div className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            {/* <h2>Documentation &rarr;</h2> */}
+            <p><FlightTakeoffIcon /> Departing from</p>
+            <p><FlightLandIcon /> Arriving at</p>
           </div>
         </div>
       </main>
