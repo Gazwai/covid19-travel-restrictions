@@ -18,15 +18,17 @@ export default function Home() {
           Traveling around the Coronavirus
         </h1>
 
+        <Image src="/airplane-corona.svg" alt="Airplane Logo" width={300} height={300} />
+
         <p className={styles.description}>
           See what traveling restrictions will affect your trip
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <div className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          </div>
         </div>
       </main>
 
