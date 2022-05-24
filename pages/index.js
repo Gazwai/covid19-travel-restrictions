@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
+import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
+import EventIcon from '@mui/icons-material/Event';
+import VaccinesIcon from '@mui/icons-material/Vaccines';
 
 export default function Home() {
   return (
@@ -28,7 +31,16 @@ export default function Home() {
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
             <p><FlightTakeoffIcon /> Departing from</p>
+            <p><ConnectingAirportsIcon /> Traveling through</p>
             <p><FlightLandIcon /> Arriving at</p>
+            <p><EventIcon /> Arrival date</p>
+            <p><VaccinesIcon /> Vaccination status</p>
+
+          </div>
+        </div>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <p>Map goes here</p>
           </div>
         </div>
       </main>
