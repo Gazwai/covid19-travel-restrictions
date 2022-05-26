@@ -51,7 +51,7 @@ export default function Home() {
                 disablePortal
                 id="vaccination-status"
                 options={["Not vaccinated", "Fully vaccinated", "Fully vaccinated with boosters"]}
-                sx={{ width: 300 }}
+                sx={{ width: 250 }}
                 renderInput={(params) => <TextField {...params} label="Vaccination status" variant="standard" />}
               />
             </div>
