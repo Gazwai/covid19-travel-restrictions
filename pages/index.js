@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import CountrySelect from '../components/countryselect';
+import CountrySelect from '../components/country-select';
+import BasicDatePicker from '../components/basic-date-picker';
 import { TextField, Autocomplete } from '@mui/material';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
@@ -54,7 +55,10 @@ export default function Home() {
                 renderInput={(params) => <TextField {...params} label="Vaccination status" variant="standard" />}
               />
             </div>
-            <p><EventIcon /> Arrival date</p>
+            <div className={styles.rowC}>
+              <EventIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <BasicDatePicker />
+            </div>
 
           </div>
         </div>
