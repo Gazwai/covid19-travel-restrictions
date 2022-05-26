@@ -1,3 +1,5 @@
+var Amadeus = require('amadeus');
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -8,6 +10,18 @@ import EventIcon from '@mui/icons-material/Event';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 
 export default function Home() {
+
+  // var amadeus = new Amadeus({
+  //   clientId: 'yI4chDhqr9o6VUFvgTDJIMGsF0hRatrC',
+  //   clientSecret: '3t4zl2sBqQ9Ekq3y'
+  // });
+
+  // amadeus.dutyOfCare.diseases.covid19AreaReport.get({ countryCode: 'US' }).then(
+  //   (response) => console.log(response.data)
+  // ).catch((responseError) => {
+  //   console.log(responseError.code);
+  // });
+
   return (
     <div className={styles.container}>
       <Head>
