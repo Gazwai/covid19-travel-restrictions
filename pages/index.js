@@ -33,12 +33,17 @@ export default function Home() {
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
             <div className={styles.rowC}>
-              <FlightTakeoffIcon sx={{ fontSize: 30 }}/>
+              <FlightTakeoffIcon sx={{ fontSize: 30 }} className={styles.icon} />
               <CountrySelect textLabel={"Departing from"} />
             </div>
-            <p><FlightTakeoffIcon /> Departing from</p>
-            <p><ConnectingAirportsIcon /> Traveling through</p>
-            <p><FlightLandIcon /> Arriving at</p>
+            <div className={styles.rowC}>
+              <ConnectingAirportsIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <CountrySelect textLabel={"Connecting through"} />
+            </div>
+            <div className={styles.rowC}>
+              <FlightLandIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <CountrySelect textLabel={"Arriving at"} />
+            </div>
             <p><EventIcon /> Arrival date</p>
             <p><VaccinesIcon /> Vaccination status</p>
 

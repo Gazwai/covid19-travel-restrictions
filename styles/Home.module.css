@@ -112,6 +112,11 @@
 .rowC {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.icon {
+  margin-right: 4px;
 }
 
 @media (max-width: 600px) {
