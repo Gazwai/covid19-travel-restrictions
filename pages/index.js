@@ -33,13 +33,6 @@ export default function Home() {
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
             <FlightTakeoffIcon /><CountrySelect textLabel={"Departing from"}/>
-            <Autocomplete
-              disablePortal
-              id="combo-box-demo"
-              options={["top100Films", "bestFilms"]}
-              sx={{ width: 300 }}
-              renderInput={(params) => <TextField {...params} label="Movie" />}
-            />
             <p><FlightTakeoffIcon /> Departing from</p>
             <p><ConnectingAirportsIcon /> Traveling through</p>
             <p><FlightLandIcon /> Arriving at</p>

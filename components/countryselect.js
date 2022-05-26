@@ -6,8 +6,8 @@ import Autocomplete from '@mui/material/Autocomplete';
 export default function CountrySelect(props) {
   return (
     <Autocomplete
-      id="country-select-demo"
-      sx={{ width: 250 }}
+      id="country-select"
+      sx={{ width:300 }}
       options={countries}
       autoHighlight
       getOptionLabel={(option) => option.label}
@@ -27,6 +27,7 @@ export default function CountrySelect(props) {
         <TextField
           {...params}
           label={props.textLabel}
+          variant="standard"
           inputProps={{
             ...params.inputProps,
             autoComplete: 'new-password', // disable autocomplete and autofill
