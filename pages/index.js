@@ -32,7 +32,7 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
-            <CountrySelect />
+            <FlightTakeoffIcon /><CountrySelect textLabel={"Departing from"}/>
             <Autocomplete
               disablePortal
               id="combo-box-demo"
