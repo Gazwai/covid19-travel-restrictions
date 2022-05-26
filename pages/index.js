@@ -3,6 +3,9 @@ var Amadeus = require('amadeus');
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import CountrySelect from '../components/country-select';
+import BasicDatePicker from '../components/basic-date-picker';
+import { TextField, Autocomplete } from '@mui/material';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
 import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
@@ -44,11 +47,32 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
-            <p><FlightTakeoffIcon /> Departing from</p>
-            <p><ConnectingAirportsIcon /> Traveling through</p>
-            <p><FlightLandIcon /> Arriving at</p>
-            <p><EventIcon /> Arrival date</p>
-            <p><VaccinesIcon /> Vaccination status</p>
+            <div className={styles.rowC}>
+              <FlightTakeoffIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <CountrySelect textLabel={"Departing from"} />
+            </div>
+            <div className={styles.rowC}>
+              <ConnectingAirportsIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <CountrySelect textLabel={"Connecting through"} />
+            </div>
+            <div className={styles.rowC}>
+              <FlightLandIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <CountrySelect textLabel={"Arriving at"} />
+            </div>
+            <div className={styles.rowC}>
+              <VaccinesIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <Autocomplete
+                disablePortal
+                id="vaccination-status"
+                options={["Not vaccinated", "Fully vaccinated", "Fully vaccinated with boosters"]}
+                sx={{ width: 250 }}
+                renderInput={(params) => <TextField {...params} label="Vaccination status" variant="standard" />}
+              />
+            </div>
+            <div className={styles.rowC}>
+              <EventIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <BasicDatePicker />
+            </div>
 
           </div>
         </div>
