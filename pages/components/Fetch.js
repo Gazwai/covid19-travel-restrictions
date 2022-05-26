@@ -1,5 +1,3 @@
-// import axios from 'axios';
-// import React from 'react';
 const axios = require('axios');
 
 axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=41bb394e')
@@ -11,14 +9,15 @@ axios.get('http://www.omdbapi.com/?i=tt3896198&apikey=41bb394e')
     // handle error
     console.log(error);
   });
+
   // .then(function () {
-  //   // always executed
+  //   // return value to the component?
   // }
   // );
 
 
 
-
+// more common ways of writing axios found online - do we need it in class form?
 
 // export default class CountryData extends React.Component {
 //   state = {
