@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import CountrySelect from '../components/countryselect';
+import { TextField, Autocomplete } from '@mui/material';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
 import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
@@ -30,6 +32,14 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
+            <CountrySelect />
+            <Autocomplete
+              disablePortal
+              id="combo-box-demo"
+              options={["top100Films", "bestFilms"]}
+              sx={{ width: 300 }}
+              renderInput={(params) => <TextField {...params} label="Movie" />}
+            />
             <p><FlightTakeoffIcon /> Departing from</p>
             <p><ConnectingAirportsIcon /> Traveling through</p>
             <p><FlightLandIcon /> Arriving at</p>
