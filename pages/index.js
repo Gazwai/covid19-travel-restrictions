@@ -32,7 +32,10 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             {/* <h2>Documentation &rarr;</h2> */}
-            <FlightTakeoffIcon /><CountrySelect textLabel={"Departing from"}/>
+            <div className={styles.rowC}>
+              <FlightTakeoffIcon sx={{ fontSize: 30 }}/>
+              <CountrySelect textLabel={"Departing from"} />
+            </div>
             <p><FlightTakeoffIcon /> Departing from</p>
             <p><ConnectingAirportsIcon /> Traveling through</p>
             <p><FlightLandIcon /> Arriving at</p>
