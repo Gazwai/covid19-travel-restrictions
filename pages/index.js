@@ -44,8 +44,17 @@ export default function Home() {
               <FlightLandIcon sx={{ fontSize: 30 }} className={styles.icon} />
               <CountrySelect textLabel={"Arriving at"} />
             </div>
+            <div className={styles.rowC}>
+              <VaccinesIcon sx={{ fontSize: 30 }} className={styles.icon} />
+              <Autocomplete
+                disablePortal
+                id="vaccination-status"
+                options={["Not vaccinated", "Fully vaccinated", "Fully vaccinated with boosters"]}
+                sx={{ width: 300 }}
+                renderInput={(params) => <TextField {...params} label="Vaccination status" variant="standard" />}
+              />
+            </div>
             <p><EventIcon /> Arrival date</p>
-            <p><VaccinesIcon /> Vaccination status</p>
 
           </div>
         </div>
