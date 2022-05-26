@@ -70,11 +70,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  flex-direction: row;
+  /* max-width: 800px; */
 }
 
 .card {
-  margin: 1rem;
+  margin-top: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -82,7 +83,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 /* .card:hover,
@@ -106,6 +107,16 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.rowC {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.icon {
+  margin-right: 4px;
 }
 
 @media (max-width: 600px) {
