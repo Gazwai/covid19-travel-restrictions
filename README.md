@@ -174,7 +174,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [stars-url]: https://github.com/Gazwai/covid19-travel-restrictions/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Gazwai/covid19-travel-restrictions.svg?style=for-the-badge
 [issues-url]: https://github.com/Gazwai/covid19-travel-restrictions/issues
-[license-shield]: https://img.shields.io/github/license/Gazwai/covid19-travel-restrictionse.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Gazwai/covid19-travel-restrictions.svg?style=for-the-badge
 [license-url]: https://github.com/Gazwai/covid19-travel-restrictions/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
 
