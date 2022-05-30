@@ -1,5 +1,5 @@
 var Amadeus = require('amadeus');
-import { JP, US } from "./jp_json"
+import { JP, US } from "./test_json"
 
 export default function handler(req, res) {
   // console.log(JP);

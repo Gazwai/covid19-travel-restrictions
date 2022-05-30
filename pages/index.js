@@ -1,4 +1,3 @@
-var Amadeus = require('amadeus');
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -11,7 +10,7 @@ import FlightLandIcon from '@mui/icons-material/FlightLand';
 import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import EventIcon from '@mui/icons-material/Event';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
-
+import { useEffect } from 'react';
 export default function Home() {
 
   // var amadeus = new Amadeus({
@@ -24,6 +23,13 @@ export default function Home() {
   // ).catch((responseError) => {
   //   console.log(responseError.code);
   // });
+
+  
+  fetch("/api/US/JP")
+    .then(response => response.json())
+    .then(data => console.log(data))
+  // useEffect(()=> {
+  // }, [])
 
   return (
     <div className={styles.container}>
