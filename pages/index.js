@@ -40,7 +40,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        {/* Adding the data-testid here is one way to select this element */}
+        <h1 className={styles.title} data-testid="heading">
           Traveling around the Coronavirus
         </h1>
 
