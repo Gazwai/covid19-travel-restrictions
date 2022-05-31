@@ -5,7 +5,7 @@ export default function handler(req, res) {
   // console.log(JP);
   // console.log(US);
   const { to, from } = req.query
-  const checkCountry = from || "US"
+  const checkCountry = to || "US"
   const response = {}
   if (!!JP) {
     response.governmentSiteLink = JP.dataSources.governmentSiteLink;
