@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} data-testid="heading">
           Traveling around the Coronavirus
         </h1>
 
