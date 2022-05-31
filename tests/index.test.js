@@ -2,7 +2,7 @@
 
 import Home from "../pages/index";
 import "@testing-library/jest-dom";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 
 describe('Heading', () => {
   it('Renders a heading for the landing page', () => {
