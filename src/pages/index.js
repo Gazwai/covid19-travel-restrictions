@@ -25,9 +25,9 @@ export default function Home() {
   // });
 
 
-  fetch("/api/US/JP")
-    .then(response => response.json())
-    .then(data => console.log(data))
+  // fetch("/api/US/JP")
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
   // useEffect(()=> {
   // }, [])
 
