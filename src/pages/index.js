@@ -2,8 +2,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import CountrySelect from '../components/country-select';
-import BasicDatePicker from '../components/basic-date-picker';
+import CountrySelect from '../../components/country-select';
+import BasicDatePicker from '../../components/basic-date-picker';
 import { TextField, Autocomplete } from '@mui/material';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
